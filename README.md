@@ -36,7 +36,9 @@ If there is existing data in the tables that you want to sync, then you will nee
 
 **Step 2. For any container fields that you want to sync, setup corresponding "B64_" fields for.**
 
-For example, if the container field is named "Photo_Container" then setup a new field named "B64_Photo_Container." Setup the field as a calculation with this formula: Photo_Container & "<b64>" & Base64Encode ( Photo_Container ) & "</b64>" The calculation result should be set to Text.
+For example, if the container field is named "Photo_Container" then setup a new field named "B64_Photo_Container." Setup the field as a calculation with this formula: Photo_Container & "<b64>" & Base64Encode ( Photo_Container ) & "</b64>" 
+
+The calculation result should be set to Text and it's best to leave the B64 field unstored.
 
 
 **Step 3. Import the "EasySync" table from the demo database into your database.**
